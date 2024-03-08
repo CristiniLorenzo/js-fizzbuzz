@@ -28,17 +28,19 @@ for(let i = 1; i <=100; i++) {
     }
     else {
         message = i
-        cssClass = ''
+        cssClass = 'base-color'
     }
     // console.log(message);
 
     // aggiungere div all html 
+    
     const newBox = `<div class="box ${cssClass}">${message}</div>`;
     numberContainer.innerHTML += newBox;
 
     // const newBox = document.createElement('div');
     // newBox.innerHTML = message;
     // newBox.classList.add('box');
+    // newBox.classList.add(cssClass);
     // numberContainer.append(newBox)
 
 }
