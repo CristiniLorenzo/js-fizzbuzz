@@ -9,24 +9,36 @@ for(let i = 1; i <=100; i++) {
     // console.log(i);
     
     let message ;
+    let cssClass;
     // SE MULTIPLI SIA DI 3 CHE DI 5 SCRIVO FIZZBUZZ
     if (i % 5 === 0 && i % 3 === 0) {
-        message = 'fizzOrBuzz';
+        message = 'fizzBuzz';
+        cssClass = 'fizz-buzz'
     }
 
     // SE MULTIPLI DI 3 SCRIVO FIZZ
     else if (i % 3 === 0) {
         message = 'fizz';
+        cssClass = 'fizz'
     }
     // SE MULTIPLI DI 5 SCRIVO BUZZ
      else if (i % 5 === 0) {
         message = 'Buzz';
+        cssClass = 'buzz'
     }
     else {
         message = i
+        cssClass = ''
     }
-
     // console.log(message);
-    const newBox = `<div class="box">${message}</div>`;
+
+    // aggiungere div all html 
+    const newBox = `<div class="box ${cssClass}">${message}</div>`;
     numberContainer.innerHTML += newBox;
+
+    // const newBox = document.createElement('div');
+    // newBox.innerHTML = message;
+    // newBox.classList.add('box');
+    // numberContainer.append(newBox)
+
 }
