@@ -4,27 +4,27 @@
 
 // STAMPO I NUMNERI DA 1 A 100 
 for(let i = 1; i <=100; i++) {
-    console.log(i);
+    // console.log(i);
     
-    let fizOrBuzz;
+    // let fizOrBuzz ;
 
     // SE MULTIPLI SIA DI 3 CHE DI 5 SCRIVO FIZZBUZZ
-    if (i % 5 === 0 & i % 3 === 0) {
-        fizOrBuzz = i + ` fizzBuzz`;
-        console.log(fizOrBuzz)
+    if (i % 5 === 0 && i % 3 === 0) {
+        // fizOrBuzz = i + ` fizzBuzz`;
+        console.log('fizOrBuzz')
     }
 
     // SE MULTIPLI DI 3 SCRIVO FIZZ
     else if (i % 3 === 0) {
-        fizOrBuzz = i + ` fizz`;
-        console.log(fizOrBuzz)
+        // fizOrBuzz = i + ` fizz`;
+        console.log('fizz')
     }
     // SE MULTIPLI DI 5 SCRIVO BUZZ
      else if (i % 5 === 0) {
-        fizOrBuzz = i + ` buzz`;
-        console.log(fizOrBuzz)
+        // fizOrBuzz = i + ` buzz`;
+        console.log('Buzz')
     }
-
-    
-
+    else {
+        console.log(i)
+    }
 }
